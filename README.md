@@ -36,10 +36,10 @@ This separation makes the program easier to update and test.
 4. Separation of Concerns
 The system is divided into separate concerns. Input collection is done in get_staff_info() and get_items(), business logic is performed in check_approval() and manager_decision(), and reporting is handled in show_details() and show_statistics(). This ensures that modifying one area does not affect the others.
 
-6. YAGNI (You Aren’t Gonna Need It)
+5. YAGNI (You Aren’t Gonna Need It)
 The implementation includes only the functionality required at this stage. For example, it does not maintain a full list of item names because the task only required calculation of the total price. This prevents overengineering.
 
-7. Clean Code
+6. Clean Code
 The program makes use of descriptive variable and method names such as staff_id, approval_ref, and show_statistics(). This improves clarity and helps others quickly understand the purpose of each element in the code.
 Software Development Life Cycle (SDLC)
 Planning – Defined the goal of building a requisition management system.
@@ -48,6 +48,6 @@ Design – Organised the solution into OOP methods, applying KISS, DRY, and SRP 
 Implementation – Developed the code in Python.
 Testing – Verified with different input scenarios (requests under $500, over $500, and manager approvals).
 Maintenance – Ensured that changing approval rules or outputs requires minimal code updates.
+
 Conclusion
 This project demonstrates how applying software design principles results in a clean and maintainable program. By following KISS, DRY, SRP, Separation of Concerns, YAGNI, and Clean Code, the system is easy to understand, extend, and manage. It highlights how structured design and OOP concepts can be applied effectively in Python projects.
-<img width="432" height="635" alt="image" src="https://github.com/user-attachments/assets/edbe83f1-2a93-42cd-90fc-308de4b62b9e" />
