@@ -3,12 +3,12 @@ Project Overview
 This project is a Python-based Requisition Management System that demonstrates the use of Object-Oriented Programming (OOP). It enables staff members to submit requisitions for items. Requests with a total amount below $500 are automatically approved, while those above the threshold remain pending and require manager approval. The system also records overall statistics, such as how many requests have been submitted, approved, left pending, or rejected.
 Features
 - Each requisition is assigned a sequential counter-based ID (starts at 10001 and increments automatically)
-	Capture staff details such as date, ID, and name
-	Enter multiple items with their prices and compute the total
-	Automatically approve requests under $500
-	Manager can approve or reject pending requisitions
-	Show full details of each requisition
-	Generate statistics including total submitted, approved, pending, and rejected requisitions
+Capture staff details such as date, ID, and name
+Enter multiple items with their prices and compute the total
+Automatically approve requests under $500
+Manager can approve or reject pending requisitions
+Show full details of each requisition
+Generate statistics including total submitted, approved, pending, and rejected requisitions
 Software Design Principles
 1. KISS (Keep It Simple, Stupid)
 The design of the code is kept simple for readability and ease of use. For instance, the auto-approval is handled with one clear condition:
