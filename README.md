@@ -2,7 +2,7 @@ Requisition System (Part B Task 1 & 2)
 Project Overview
 This project is a Python-based Requisition Management System that demonstrates the use of Object-Oriented Programming (OOP). It enables staff members to submit requisitions for items. Requests with a total amount below $500 are automatically approved, while those above the threshold remain pending and require manager approval. The system also records overall statistics, such as how many requests have been submitted, approved, left pending, or rejected.
 Features
-- Each requisition is assigned a sequential counter-based ID (starts at 10001 and increments automatically)
+Each requisition is assigned a sequential counter-based ID (starts at 10001 and increments automatically)
 Capture staff details such as date, ID, and name
 Enter multiple items with their prices and compute the total
 Automatically approve requests under $500
@@ -20,13 +20,13 @@ Repetition of logic is avoided by using class-level counters and methods that ha
 3. Single Responsibility Principle (SRP)
 Every method in the system has a single, well-defined responsibility:
 
-- get_staff_info() → gathers staff details
-- get_items() → handles item input and totals
-- check_approval() → checks if requisition meets approval rules
-- manager_decision() → applies manager’s final choice
-- show_details() → displays requisition information
+get_staff_info() → gathers staff details
+get_items() → handles item input and totals
+check_approval() → checks if requisition meets approval rules
+manager_decision() → applies manager’s final choice
+show_details() → displays requisition information
 
-- show_statistics() → outputs statistics summary
+show_statistics() → outputs statistics summary
 This separation makes the program easier to update and test.
 4. Separation of Concerns
 The system is divided into separate concerns. Input collection is done in get_staff_info() and get_items(), business logic is performed in check_approval() and manager_decision(), and reporting is handled in show_details() and show_statistics(). This ensures that modifying one area does not affect the others.
